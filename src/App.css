@@ -1,0 +1,153 @@
+body {
+  background-color:aqua; /* Set the background color as per your preference */
+  /*background-image: url('background-image.jpg');  Set the background image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#poke-container{
+  background-color: aquamarine;
+}
+
+#pokemon-logo img{
+  width:auto;
+  height: 20rem;
+}
+
+#container-transparent {
+  background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+  /* Other styles for your container */
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#bg-image{
+  background-image: url('/jungle.jpg');
+}
+
+@font-face {
+  font-family: 'PokeFont'; /* This can be any name you choose */
+  src: url('/Fonts/Pocket-Monk.otf') format('opentype'); /* Update the path accordingly */
+}
+
+
+#PokeName{
+  font-family: 'PokeFont', sans-serif;
+  font-size: 25px;
+  color:black;
+}
+
+#col-pok{
+  width: 18rem;
+}
+ #img-pok{
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border: solid 2px;
+  border-color: darkgray;
+  background-image: url('/Grass.jpg');
+  background-size:cover;
+ }
+
+#img-poke-details{
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  /*background-image: url('/Grass.jpg');
+  background-size:cover;
+  */
+
+}
+/* Loading screen*/
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading-text {
+  font-size: 20px;
+}
+
+/* Styling for the spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #007bff; /* Choose a color for the spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+/*ENd Loading screen*/
+
+ .card {
+  padding: 2em;
+  transition: all 0.3s;
+  width: 21rem;
+  height: 0.9rem;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  backdrop-filter: blur(1rem);
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+  border-top-color: rgba(225, 225, 225, 0.5);
+  border-left-color: rgba(225, 225, 225, 0.5);
+  border-right-color: rgba(225, 225, 225, 0.5);
+  border-bottom-color: rgba(225, 225, 225, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90%; /* Adjust width on very small screens */
+  }
+}
+
+/* Custom styles for the hover animation */
+.card {
+  transition: transform 0.9s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-50px);
+}
+
+
+/*
+.card:hover {
+  transform: scale(1.15);
+}
+*/
+
+#cb1 {
+  background-color: rgba(225, 225, 225, 0.1);
+  
+}
+
+#pokedetails{
+  border: solid 2px;
+  border-radius: 10px;
+}
+
+.white-box text-center .img{
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+
