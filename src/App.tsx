@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Header from "./assets/components/Header";
 import { Route, Routes } from "react-router-dom";
 import Pokemon from "./assets/components/Pokemon";
-import Details from "./assets/components/Details";
-import About from "./assets/components/pages/About";
 
 interface PokemonData {
   name: string;
@@ -70,8 +68,6 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Pokemon pokeList={pokemonList} />} />
-        <Route path="/:id" element={<Details />} />
-        <Route path="/about" element={<About />} />
       </Routes>
     </>
   );

@@ -179,6 +179,21 @@ export default function Details() {
     }
   });
 
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <div className="loading-text">
+          <h4 id="PokeName" style={{ fontSize: "4rem" }}>
+            Loading...
+          </h4>
+        </div>
+        <div>
+          <img src="/pikachu.gif" alt="Loading" className="img-responsive" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className="container" style={{ marginTop: "7rem" }}>
@@ -194,7 +209,17 @@ export default function Details() {
               Abilities
             </h4>
             <PokemonAblities pokedetails={pokemonDetails} />
-            <Evolutions pokeevolve={pokemonEvo} />
+            {pokemonEvo ? (
+              <Evolutions pokeevolve={pokemonEvo} />
+            ) : (
+              <div className="loading-container">
+                <div className="loading-text">
+                  <h4 id="PokeName" style={{ fontSize: "4rem" }}>
+                    No Evolution Data
+                  </h4>
+                </div>
+              </div>
+            )}
           </div>
           <div className="col-md-7 col-lg-7 col-sm-7">
             <PokemonStats pokedetails={pokemonDetails} />

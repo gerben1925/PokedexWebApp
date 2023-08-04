@@ -1,3 +1,4 @@
+/*
 import { Outlet } from "react-router-dom"; 
  
  const About =()=> {
@@ -10,3 +11,5 @@ import { Outlet } from "react-router-dom";
 
 
 export default About;
+
+*/
